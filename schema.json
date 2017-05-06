@@ -1,0 +1,52 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "name": "Examination Pattern",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
+        },
+        "categories": {
+            "type": "array",
+            "items": {
+                "name": "category",
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "questions": {
+                        "type": "array",
+                        "items": {
+                            "name": "question",
+                            "type": "object",
+                            "type": "object",
+                            "properties": {
+                                "question": {
+                                    "type": "string"
+                                },
+                                "notes": {
+                                    "type": "string"
+                                },
+                                "sin": {
+                                    "type": "boolean"
+                                },
+                                "last_update": {
+                                    "type": "string",
+                                    "format": "date-time"
+                                }
+                            }
+                        },
+                        "required": ["question"]
+                    }
+                }
+            }
+        }
+    }
+}

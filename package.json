@@ -1,0 +1,11 @@
+{
+  "name": "mea-culpa-examinations",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "ajv validate -s schema.json -d example.json"
+  },
+  "dependencies": {
+    "ajv-cli": "^2.1.0"
+  }
+}
